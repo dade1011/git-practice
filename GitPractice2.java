@@ -17,14 +17,14 @@ public class GitPractice2 {
             aSSE = 0;
             BSSE = 0;
             NSSE = 0;
-            // System.out.printf("\n%f, %f\n", a,B);
+
             a0 = a;
             B0 = B;
 
             for(int i = 0;i<8;i++){
                 Yp[i] = a + B*dataX[i];
                 System.out.printf("\nyp: %f, X: %f\n", Yp[i], dataX[i]);
-                // System.out.printf("\nasdf: %f\n", Math.pow(dataY[i] - Yp[i],2)/2);
+                
                 NSSE += (Math.pow(dataY[i] - Yp[i],2)/2);
                 System.out.printf("\n%f\n", (Math.pow(dataY[i] - Yp[i],2))/2);
                 aSSE += -(dataY[i]-Yp[i]);
